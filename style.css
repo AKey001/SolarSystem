@@ -77,11 +77,11 @@ body {
 }
 
 .planet {
-    animation: OrbitAnimation linear infinite;
+    animation: PlanetAnimation linear infinite;
     transform-origin: 450px 450px;
 }
 
-@keyframes OrbitAnimation {
+@keyframes PlanetAnimation {
     to {
         transform: rotate(360deg);
     }
