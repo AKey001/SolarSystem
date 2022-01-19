@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Solar System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+                <div id="title">SVG</div>
+                <div id="buttons">
+                    <a id="start" class="baritem">Pause</a>
+                    <a id="reset" class="baritem">Reset</a>
+                    <button id="switch">Technologie wechseln</button>
+                </div>
+        </header>
+        <content>
+            <div id="svgGroup">
+                <svg id="svg" class="window"
+                     viewBox="0 0 900 900"
+                     xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+                    <circle class="orbit" r="80" cx="450" cy="450"></circle>
+                    <circle class="orbit" r="110" cx="450" cy="450"></circle>
+                    <circle class="orbit" r="140" cx="450" cy="450"></circle>
+                    <circle class="orbit" r="180" cx="450" cy="450"></circle>
+                    <circle class="orbit" r="250" cx="450" cy="450" ></circle>
+                    <circle class="orbit" r="310" cx="450" cy="450" ></circle>
+                    <circle class="orbit" r="365" cx="450" cy="450" ></circle>
+                    <circle class="orbit" r="415" cx="450" cy="450" ></circle>
+
+                    <circle id="sun" r="45" cx="450" cy="450"></circle>
+                    <circle id="mercury" class="planet" r="3" cx="530" cy="450"></circle>
+                    <circle id="venus" class="planet" r="7" cx="560" cy="450"></circle>
+                    <circle id="earth" class="planet" r="7" cx="590" cy="450"></circle>
+                    <circle id="mars" class="planet" r="5" cx="630" cy="450"></circle>
+                    <circle id="jupyter" class="planet" r="21" cx="700" cy="450"></circle>
+                    <circle id="saturn" class="planet" r="21" cx="760" cy="450"></circle>
+                    <circle id="uranus" class="planet" r="19" cx="815" cy="450"></circle>
+                    <circle id="neptune" class="planet" r="17" cx="865" cy="450"></circle>
+
+                </svg>
+            </div>
+
+            <div id="canvasGroup" hidden>
+                <canvas id="canvas" class="window"></canvas>
+            </div>
+
+        </content>
+
+        <script src="canvas.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #212121;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+
+    color: white;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #424242;
+}
+#switch {
+    color: #fff;
+    background-color: #1565c0;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 9px 25px;
+    transition: all 0.3s ease 0s;
+}
+#switch:hover {
+    background-color: #003c8f;
+}
+.baritem {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s ease 0s;
+    font-weight: normal;
+    font-size: large;
+    cursor: pointer;
+    user-select: none;
+}
+#baritem {
+    color: #0d6efd;
+}
+
+
+
+
+#sun {
+    fill: yellow;
+}
+
+.window {
+    display: block;
+    border: 1px solid;
+    width: 900px;
+    height: 900px;
+    background: #141a26;
+    margin: 12px auto;
+}
+
+.orbit {
+    stroke: rgba(255, 255, 255, 0.15);
+    stroke-width: 1;
+    fill: none;
+}
+
+.planet {
+    animation: OrbitAnimation linear infinite;
+    transform-origin: 450px 450px;
+}
+
+@keyframes OrbitAnimation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#mercury {
+    fill: #696969;
+    animation-duration: 3s;
+}
+
+#venus {
+    fill: #FF7F50;
+    animation-duration: 7s;
+}
+
+#earth {
+    fill: #1E90FF;
+    animation-duration: 12s;
+}
+
+#mars {
+    fill: #c4967f;
+    animation-duration: 23s;
+}
+
+#jupyter {
+    fill: #2F4F4F;
+    animation-duration: 144s;
+}
+
+
+#saturn {
+    fill: #B8860B;
+    animation-duration: 366s;
+}
+
+#uranus {
+    fill: #87CEFA;
+    animation-duration: 1041s;
+}
+
+#neptune {
+    fill: #4169E1;
+    animation-duration: 2037s;
+}
+
